@@ -45,7 +45,7 @@
       "mocha": true
     }
   },
-  "repository": "https://github.com/webaifei/fe-note.git",
+  "repository": "https://github.com/webaifei/generator-mock-server.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

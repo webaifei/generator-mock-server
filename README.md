@@ -20,11 +20,14 @@ create an new api
 
 ```
 yo mock-server:api getUserInfo
-then input the reqested path of the api and the method
-//fetch uri: localhost:3000/your_api_path
+//then input the reqested path of the api and the method
+//start the api server 启动api服务器
+node ./bin/www
+
+//fetch data with uri: localhost:3000/your_api_path 查看返回数据
 ```
 
-接口返回的数据 自行修改即可
+接口返回的数据 自行修改对应的路由文件即可
 
 
 ## Getting To Know Yeoman
