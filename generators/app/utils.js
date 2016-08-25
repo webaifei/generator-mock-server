@@ -25,7 +25,6 @@ function write(tree,path){
   tree = escodegenJsx.attachComments(tree, tree.comments, tree.tokens);
   const options = { comment: true, format: { indent: { style: '  ' } } };
   const code = escodegenJsx.generate(tree, options) + '\n';
-  console.log(path,'----')
   fs.writeFileSync(path, code, 'utf8');
 }
 

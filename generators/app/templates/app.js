@@ -32,7 +32,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(allowCors)
 /**
  * 使用use来使用中间件
  */
@@ -73,4 +73,13 @@ app.use(function(err, req, res, next) {
 });
 
 
+
+// 允许cors
+function allowCors(req, res, next){
+  res.set({
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "Content-Type"
+  })
+  next();
+}
 module.exports = app;
