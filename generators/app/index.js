@@ -56,7 +56,14 @@ module.exports = yeoman.Base.extend({
       this.destinationPath('routes/index.js')
     )
 
-
+    this.fs.copy(
+      this.templatePath('index.html.tpl'),
+      this.destinationPath('views/index.html')
+    )
+    this.fs.copy(
+      this.templatePath('error.html.tpl'),
+      this.destinationPath('views/error.html')
+    )
     this.fs.copy(
       this.templatePath('eslintrc'),
       this.destinationPath('.eslintrc')
