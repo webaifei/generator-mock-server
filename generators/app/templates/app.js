@@ -48,7 +48,18 @@ for(var k in routes){
 for(var k in routes){
   app.use('/', routes[k])
 }
-
+app.get('/', function (req, res, next){
+  res.render('index',{
+    apiList: apiList
+  }, function (err, html){
+    if(err){
+      console.log(err);
+      process.exit(0);
+    }else{
+      res.end(html);
+    }
+  })
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
