@@ -1,5 +1,4 @@
-# generator-mock-server [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
->
+# generator-mock-server 
 
 ## Installation
 
@@ -16,7 +15,15 @@ Then generate your new project:
 yo mock-server
 ```
 创建一个新的接口
-create an new api
+```
+yo mock-server:api apiFileName
+//input the requested path for this api
+输入接口请求路径
+
+input the method for requestting this api
+输入接收的请求方法
+post get put all ...
+
 
 ```
 查看所有的接口
